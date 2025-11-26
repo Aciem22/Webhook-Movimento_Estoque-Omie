@@ -3,7 +3,7 @@ import httpx
 
 app = FastAPI()
 
-GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxlUDRnfbeey_yQ75SjsXP0pkA1rx56QeHmucA0i4_Jef3Hheh-3HpJzb-vXb28EV9K/exec"
+GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz0wcIzBJu9T_VG7JY9Ofr_qJnpzVCruWjgVMf9vavGg-mLHEuPTO6J8y2I4ZLQZzff/exec"
 
 @app.post("/webhook")
 async def receber_webhook(request: Request):
