@@ -13,7 +13,7 @@ async def receber_webhook(request: Request):
     print(body)  # Vai aparecer nos logs do Render
 
 
-    try:
+    '''try:
         async with httpx.AsyncClient() as client:
             response = await client.post(
                 GOOGLE_SCRIPT_URL,
@@ -25,6 +25,6 @@ async def receber_webhook(request: Request):
         print(response.text)
     
     except Exception as e:
-        print("❌ Erro ao enviar para o Google Script:", e)
+        print("❌ Erro ao enviar para o Google Script:", e)'''
 
     return {"status": "ok"}
